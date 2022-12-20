@@ -1,13 +1,12 @@
 source "https://rubygems.org"
 
 # gem "jekyll", "~> 4.3.1"
-# Github:
-gem "github-pages", group: :jekyll_plugins
 
 # Default theme
 # gem "minima", "~> 2.5"
 group :jekyll_plugins do
   gem "jekyll-scholar"
+  gem "github-pages"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

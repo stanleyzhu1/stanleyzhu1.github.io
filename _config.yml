@@ -1,9 +1,18 @@
+# Github Pages Configurations:
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
 title: Blog
 email: stanleyz@uchicago.edu
 description: >-
   Hello, World!
 baseurl: ""
-highlighter: rouge
-
 plugins:
   - jekyll-scholar
