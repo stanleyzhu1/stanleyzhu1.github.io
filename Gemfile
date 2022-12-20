@@ -5,7 +5,6 @@ source "https://rubygems.org"
 # Default theme
 # gem "minima", "~> 2.5"
 group :jekyll_plugins do
-  gem "jekyll-scholar"
   gem "github-pages"
 end
 

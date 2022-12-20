@@ -14,5 +14,3 @@ email: stanleyz@uchicago.edu
 description: >-
   Hello, World!
 baseurl: ""
-plugins:
-  - jekyll-scholar
