@@ -9,7 +9,7 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-title: Blog
+title: false
 email: stanleyz@uchicago.edu
 description: >-
   Hello, World!
