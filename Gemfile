@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.1"
+# gem "jekyll", "~> 4.3.1"
 # Github:
-# gem "github-pages", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
 
 # Default theme
 # gem "minima", "~> 2.5"
