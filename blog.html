@@ -1,0 +1,36 @@
+---
+title: Blog
+---
+
+<html>
+    {% include head.html %}
+    <body>
+        {% include nav.html %}
+        <div id='blog' class='wrap'>
+            <div id='intro'>
+                <div class='quote'>
+                    <p>土に根を下ろし、風と共に生きよう。種と共に冬を越え、鳥と共に春を歌おう</p>
+                    <a href='https://ja.wikipedia.org/wiki/%E5%A4%A9%E7%A9%BA%E3%81%AE%E5%9F%8E%E3%83%A9%E3%83%94%E3%83%A5%E3%82%BF' target='_blank'>天空の城ラピュタ</a>
+                </div>
+            </div>
+            <div id='posts' class='section'>
+                {% for post in site.posts %}
+                    <div class='post-row'>
+                        <p class='post-title'>
+                            <a href="{{ post.url }}">
+                                {{ post.title }}
+                            </a>
+                        </p>
+                        <p class='post-date'>
+                            {{ post.date | date_to_long_string }}
+                        </p>
+                    </div>
+                    <p class='post-subtitle'>
+                        {{ post.subtitle }}
+                    </p>
+                    <span class='hidden'>{{ forloop.index }}</span>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

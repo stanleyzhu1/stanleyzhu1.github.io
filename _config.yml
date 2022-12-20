@@ -1,0 +1,9 @@
+title: Blog
+email: stanleyz@uchicago.edu
+description: >-
+  Hello, World!
+baseurl: ""
+highlighter: rouge
+
+plugins:
+  - jekyll-scholar

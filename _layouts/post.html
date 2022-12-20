@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+
+    <meta name='description' content='Stanley Zhu is an undergrad at the University of Chicago.'>
+    <meta name='keywords' content='{{ page.keywords }}'>
+    <meta name='author' content='Stanley Zhu'>
+
+    <link href='/assets/css/blog.css' rel='stylesheet'/>
+
+    {% include mathjax.html %}
+</head>
+<body>
+<div class='content'>
+    {% include nav.html %}
+    <div class='front-matter'>
+        <div class='wrap'>
+            <h1>{{ page.title }}</h1>
+            <h4>{{ page.subtitle }}</h4>
+            <div class='bylines'>
+                <div class='byline'>
+                    <p>{{ page.date |  date: '%d %B %Y' }}</p>
+                </div>
+            </div>
+            <div class='clear'></div>
+        </div>
+    </div>
+    <div class='wrap article'>
+        {{ content }}
+    </div>
+    <div id='bibliography'>
+        <div class='wrap'>
+            {% bibliography --cited %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
