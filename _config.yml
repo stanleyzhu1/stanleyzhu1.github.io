@@ -26,6 +26,7 @@ include:
 
 author:
   name: "Stanley Zhu"
+  avatar: "/assets/images/kawarau.jpg"
   bio: "Undergrad at the University of Chicago."
   links:
     - label: "Email"
