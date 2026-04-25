@@ -27,7 +27,7 @@ include:
 author:
   name: "Stanley Zhu"
   avatar: "/assets/images/kawarau.jpg"
-  bio: "Undergrad at the University of Chicago."
+  bio: "Software Engineer at Google. UChicago '23."
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -35,6 +35,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/stanleyzhu1"
+    - label: "Resume"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/resume.pdf"
 
 footer:
   links:
