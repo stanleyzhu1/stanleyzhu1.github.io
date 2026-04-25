@@ -9,3 +9,25 @@
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
+
+<style>
+  .page__content details {
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    background-color: #f0f6fb;
+    border-left: 3px solid #4a90c4;
+    border-radius: 4px;
+  }
+  .page__content details[open] {
+    background-color: #e6f0f8;
+  }
+  .page__content details > summary {
+    cursor: pointer;
+    font-style: italic;
+    color: #2a5d85;
+    padding: 0.25em 0;
+  }
+  .page__content details > summary:hover {
+    color: #4a90c4;
+  }
+</style>
