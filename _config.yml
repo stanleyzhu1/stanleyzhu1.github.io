@@ -1,16 +1,59 @@
-# Github Pages Configurations:
-lsi: false
-safe: true
-incremental: false
+title: Stanley Zhu
+email: stanleyz@uchicago.edu
+description: >-
+  Personal site of Stanley Zhu.
+baseurl: ""
+url: "https://stanleyzhu1.github.io"
+
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: default
+
+markdown: kramdown
 highlighter: rouge
-gist:
-  noscript: false
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-title: false
-email: stanleyz@uchicago.edu
-description: >-
-  Hello, World!
-baseurl: ""
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+include:
+  - _pages
+
+author:
+  name: "Stanley Zhu"
+  bio: "Undergrad at the University of Chicago."
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:stanleyz@uchicago.edu"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/stanleyzhu1"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/stanleyzhu1"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: false
+      related: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
